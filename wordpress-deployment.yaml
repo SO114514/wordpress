@@ -34,7 +34,7 @@ spec:
             path: wp-config.php
       - name: wordpress-data
         persistentVolumeClaim:
-          claimName: wordpress-pvc
+          claimName: sei-wordpress-pvc
 
 
 
