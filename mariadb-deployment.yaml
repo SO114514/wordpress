@@ -46,7 +46,7 @@ spec:
       volumes:
       - name: mariadb-data
         persistentVolumeClaim:
-          claimName: mariadb-pvc
+          claimName: sei-mariadb-pvc
 
 
 
