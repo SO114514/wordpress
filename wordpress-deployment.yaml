@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: wordpress-app
-        image: quay.io/stril_60/test-wordpress:latest
+        image: quay.io/stril_60/ubi-wp@sha256:54d4e9817ae68b734c5a9cadd2bbc44d7ad77644b746590a10abbc95e18b25de
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
