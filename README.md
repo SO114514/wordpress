@@ -1,6 +1,7 @@
 # wordpressdemo
 
 This is a demo of OpenShift for students at Lernia education.
+
 Modified by Sei
 Course DevOps Engineer 23/24
 
