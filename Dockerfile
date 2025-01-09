@@ -21,7 +21,7 @@ RUN dnf install -y \
 RUN wget https://wordpress.org/latest.zip -O /tmp/wordpress.zip && unzip /tmp/wordpress.zip -d /var/www/html && rm /tmp/wordpress.zip
 RUN chown -R 1001:0 /var/www/html && chmod -R g+w /var/www/html
 
-WORKDIR /vat/www/html/wordpress/
+WORKDIR /var/www/html/wordpress/
 
 # Open Port
 EXPOSE 8080
