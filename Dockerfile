@@ -30,4 +30,4 @@ EXPOSE 8080
 RUN sed -i 's/^Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf
 
 # While start up and running the container
-CMD ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html/wordpress/"]
+CMD ["php", "-p", "-S", "0.0.0.0:8080", "-t", "/var/www/html/wordpress/"]
