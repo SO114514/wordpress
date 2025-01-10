@@ -1,0 +1,19 @@
+apiVersion: shipwright.io/v1beta1
+kind: Build
+metadata:
+  name: buildah-sei
+spec:
+  output:
+    image: 'docker.io/stril70/sei-wordpress'
+    pushSecret: dockerhub-secret
+  paramValues:
+    - name: dockerfile
+      value: Dockerfile
+  source:
+    contextDir: .
+    git:
+      url: 'https://github.com/SO114514/wordpress'
+    type: Git
+  strategy:
+    kind: ClusterBuildStrategy
+    name: buildah
